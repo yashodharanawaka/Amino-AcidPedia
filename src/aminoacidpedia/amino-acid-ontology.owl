@@ -1,0 +1,1024 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/154094r/ontologies/2019/6/amino-acid#"
+     xml:base="http://www.semanticweb.org/154094r/ontologies/2019/6/amino-acid"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:aminoacid="http://www.aminoacidpedia.org/ontologies/aminoacid#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/154094r/ontologies/2019/6/amino-acid"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#hasAcidity -->
+
+    <owl:ObjectProperty rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#hasAcidity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdfs:range rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Acidity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#hasCharge -->
+
+    <owl:ObjectProperty rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#hasCharge">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdfs:range rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Charge"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#hasEssentiality -->
+
+    <owl:ObjectProperty rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#hasEssentiality">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdfs:range rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Essentiality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#hasPolarity -->
+
+    <owl:ObjectProperty rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#hasPolarity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdfs:range rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Polarity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#hasSideChainStructure -->
+
+    <owl:ObjectProperty rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#hasSideChainStructure">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdfs:range rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#SideChainStructure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#molarMass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#molarMass">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#nameAbbreviation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#nameAbbreviation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#symbol -->
+
+    <owl:DatatypeProperty rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#symbol">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Acidic -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Acidic">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Acidity"/>
+        <owl:disjointWith rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Basic"/>
+        <rdfs:comment>Acidic</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#AcidicAminoAcid -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#AcidicAminoAcid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophilicAminoAcid"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#hasAcidity"/>
+                        <owl:allValuesFrom rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Acidic"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#BasicAminoAcid"/>
+        <rdfs:comment>Hydrophilic amino acids which are Acidic</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Acidity -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Acidity">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#RefiningFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#AliphaticAminoAcid -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#AliphaticAminoAcid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#hasSideChainStructure"/>
+                        <owl:allValuesFrom rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#ContainingHydroCarbon"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AmidicAminoAcid"/>
+        <owl:disjointWith rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#SulfurContainingAminoAcid"/>
+        <rdfs:comment>Amino acids which&apos;s sidechain contains only hidrocarbons</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#AlkylHydrophobicAminoAcid -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#AlkylHydrophobicAminoAcid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophobicAminoAcid"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#AliphaticAminoAcid"/>
+                            <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#AmidicAminoAcid"/>
+                            <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#SulfurContainingAminoAcid"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AromaticHydrophobicAminoAcid"/>
+        <rdfs:comment>Amino acids which are non-polar and contains a hydrocarbon chain</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#AmidicAminoAcid -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#AmidicAminoAcid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#hasSideChainStructure"/>
+                        <owl:someValuesFrom rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#ContainingAmideGroup"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Amino acids which&apos;s sidechain contains an amide group</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#AromaticAminoAcid -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#AromaticAminoAcid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#hasSideChainStructure"/>
+                        <owl:allValuesFrom rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#ContainingAromaticRing"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Amino acids which&apos;s sidechain contains an aromatic ring</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#AromaticHydrophobicAminoAcid -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#AromaticHydrophobicAminoAcid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#AromaticAminoAcid"/>
+                    <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophobicAminoAcid"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Amino acids which are non-polar and contains an aromatic ring</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Basic -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Basic">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Acidity"/>
+        <rdfs:comment>Basic</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#BasicAminoAcid -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#BasicAminoAcid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophilicAminoAcid"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#hasAcidity"/>
+                        <owl:allValuesFrom rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Basic"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Hydrophilic amino acids which are Acidic</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Charge -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Charge">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#RefiningFeature"/>
+        <rdfs:comment>Charge of the amino acid</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#ChargedAminoAcid -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#ChargedAminoAcid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#hasCharge"/>
+                        <owl:someValuesFrom rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Charge"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#NeutralAminoAcid"/>
+        <rdfs:comment>Amino acids which have a charge</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#ContainingAmideGroup -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#ContainingAmideGroup">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#SideChainStructure"/>
+        <owl:disjointWith rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#ContainingHydroCarbon"/>
+        <rdfs:comment>Contain an amide group in the side chain</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#ContainingAromaticRing -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#ContainingAromaticRing">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#SideChainStructure"/>
+        <rdfs:comment>Contain an aromatic ring in the side chain</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#ContainingHydroCarbon -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#ContainingHydroCarbon">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#SideChainStructure"/>
+        <owl:disjointWith rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#ContainingSulfur"/>
+        <rdfs:comment>Contain only hydrocarbons in the side chain</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#ContainingSulfur -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#ContainingSulfur">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#SideChainStructure"/>
+        <rdfs:comment>Contain sulfer in the side chain</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Essential -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Essential">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Essentiality"/>
+        <owl:disjointWith rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Non-Essential"/>
+        <rdfs:comment>does not produced inside human body</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#EssentialAminoAcid -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#EssentialAminoAcid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#hasEssentiality"/>
+                        <owl:allValuesFrom rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Essential"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Non-EssentialAminoAcid"/>
+        <rdfs:comment>Amino acids which are essential. That is cannot be produced inside humans</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Essentiality -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Essentiality">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#RefiningFeature"/>
+        <rdfs:comment>whether amino acids can be produced within humans</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophilicAminoAcid -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophilicAminoAcid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#hasPolarity"/>
+                        <owl:allValuesFrom rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Polar"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophobicAminoAcid"/>
+        <rdfs:comment>Amino acids which are polar and threfore, reacts wih water</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophobicAminoAcid -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophobicAminoAcid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#hasPolarity"/>
+                        <owl:allValuesFrom rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Non-Polar"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Amino acids which are non-polar and threfore, do not reacts wih water</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Large -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Large">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Size"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Negative -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Negative">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Charge"/>
+        <rdfs:comment>Negatively charged</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#NegativeAminoAcid -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#NegativeAminoAcid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#ChargedAminoAcid"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#hasCharge"/>
+                        <owl:allValuesFrom rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Negative"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Amino acids which have a  negative charge</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Neutral -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Neutral">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Charge"/>
+        <rdfs:comment>Not charged</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#NeutralAminoAcid -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#NeutralAminoAcid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#hasCharge"/>
+                        <owl:allValuesFrom rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Neutral"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Amino acids which&apos;s sidechain contains an amidic group</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Non-Essential -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Non-Essential">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Essentiality"/>
+        <rdfs:comment>Produced inside human body</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Non-EssentialAminoAcid -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Non-EssentialAminoAcid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#hasEssentiality"/>
+                        <owl:allValuesFrom rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Non-Essential"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Amino acids which are non-essential. That is can be produced inside humans</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Non-Polar -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Non-Polar">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Polarity"/>
+        <owl:disjointWith rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Polar"/>
+        <rdfs:comment>Contains non-polar side chains</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Polar -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Polar">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Polarity"/>
+        <rdfs:comment>Contains polar side chains</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Polarity -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Polarity">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#RefiningFeature"/>
+        <rdfs:comment>Polarity of the amino acid</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Positive -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Positive">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Charge"/>
+        <rdfs:comment>Positively charged</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#PositiveAminoAcid -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#PositiveAminoAcid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#ChargedAminoAcid"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#hasCharge"/>
+                        <owl:allValuesFrom rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Positive"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Amino acids which have a positive charge</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#RefiningFeature -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#RefiningFeature"/>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#SideChainStructure -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#SideChainStructure">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#RefiningFeature"/>
+        <rdfs:comment>Side chain structure</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Size -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Size">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#RefiningFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Small -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Small">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Size"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#SulfurContainingAminoAcid -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#SulfurContainingAminoAcid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#hasSideChainStructure"/>
+                        <owl:allValuesFrom rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#ContainingSulfur"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Amino acids which&apos;s sidechain contains sulfur</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Tiny -->
+
+    <owl:Class rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Tiny">
+        <rdfs:subClassOf rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Size"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Alanine -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Alanine">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AliphaticAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AlkylHydrophobicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophobicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#NeutralAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Non-EssentialAminoAcid"/>
+        <aminoacid:molarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">89 Da</aminoacid:molarMass>
+        <aminoacid:nameAbbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ala</aminoacid:nameAbbreviation>
+        <aminoacid:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A</aminoacid:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Arginine -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Arginine">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#BasicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#ChargedAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophilicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Non-EssentialAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#PositiveAminoAcid"/>
+        <aminoacid:molarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">174 Da</aminoacid:molarMass>
+        <aminoacid:nameAbbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arg</aminoacid:nameAbbreviation>
+        <aminoacid:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R</aminoacid:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Asparagine -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Asparagine">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AmidicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophilicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#NeutralAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Non-EssentialAminoAcid"/>
+        <aminoacid:molarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">132 Da</aminoacid:molarMass>
+        <aminoacid:nameAbbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asn</aminoacid:nameAbbreviation>
+        <aminoacid:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N</aminoacid:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Aspartate -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Aspartate">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AcidicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#ChargedAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophilicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#NegativeAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Non-EssentialAminoAcid"/>
+        <aminoacid:molarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">133 Da</aminoacid:molarMass>
+        <aminoacid:nameAbbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asp</aminoacid:nameAbbreviation>
+        <aminoacid:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D</aminoacid:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Cysteine -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Cysteine">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophilicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#NeutralAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Non-EssentialAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#SulfurContainingAminoAcid"/>
+        <aminoacid:molarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">121 Da</aminoacid:molarMass>
+        <aminoacid:nameAbbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cys</aminoacid:nameAbbreviation>
+        <aminoacid:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</aminoacid:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Glutamate -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Glutamate">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AcidicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#ChargedAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophilicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#NegativeAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Non-EssentialAminoAcid"/>
+        <aminoacid:molarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">147 Da</aminoacid:molarMass>
+        <aminoacid:nameAbbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glu</aminoacid:nameAbbreviation>
+        <aminoacid:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E</aminoacid:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Glutamine -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Glutamine">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AmidicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophilicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#NeutralAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Non-EssentialAminoAcid"/>
+        <aminoacid:molarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">146 Da</aminoacid:molarMass>
+        <aminoacid:nameAbbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gln</aminoacid:nameAbbreviation>
+        <aminoacid:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q</aminoacid:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Glycine -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Glycine">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AliphaticAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AlkylHydrophobicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophobicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#NeutralAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Non-EssentialAminoAcid"/>
+        <aminoacid:molarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">75 Da</aminoacid:molarMass>
+        <aminoacid:nameAbbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gly</aminoacid:nameAbbreviation>
+        <aminoacid:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G</aminoacid:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Histidine -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Histidine">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AromaticAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#BasicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#ChargedAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophilicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Non-EssentialAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#PositiveAminoAcid"/>
+        <aminoacid:molarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">155 Da</aminoacid:molarMass>
+        <aminoacid:nameAbbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">His</aminoacid:nameAbbreviation>
+        <aminoacid:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H</aminoacid:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Isoleucine -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Isoleucine">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AliphaticAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AlkylHydrophobicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#EssentialAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophobicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#NeutralAminoAcid"/>
+        <aminoacid:molarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">131 Da</aminoacid:molarMass>
+        <aminoacid:nameAbbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ile</aminoacid:nameAbbreviation>
+        <aminoacid:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I</aminoacid:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Leucine -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Leucine">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AliphaticAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AlkylHydrophobicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#EssentialAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophobicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#NeutralAminoAcid"/>
+        <aminoacid:molarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">131 Da</aminoacid:molarMass>
+        <aminoacid:nameAbbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leu</aminoacid:nameAbbreviation>
+        <aminoacid:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L</aminoacid:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Lysine -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Lysine">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#BasicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#ChargedAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#EssentialAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophilicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#PositiveAminoAcid"/>
+        <aminoacid:molarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">146 Da</aminoacid:molarMass>
+        <aminoacid:nameAbbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lys</aminoacid:nameAbbreviation>
+        <aminoacid:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</aminoacid:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Methionine -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Methionine">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AlkylHydrophobicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#EssentialAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophobicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#NeutralAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#SulfurContainingAminoAcid"/>
+        <aminoacid:molarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">149 Da</aminoacid:molarMass>
+        <aminoacid:nameAbbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Met</aminoacid:nameAbbreviation>
+        <aminoacid:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M</aminoacid:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Phenylalanine -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Phenylalanine">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AromaticAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AromaticHydrophobicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#EssentialAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophobicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#NeutralAminoAcid"/>
+        <aminoacid:molarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">165 Da</aminoacid:molarMass>
+        <aminoacid:nameAbbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phe</aminoacid:nameAbbreviation>
+        <aminoacid:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F</aminoacid:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Proline -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Proline">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AliphaticAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AlkylHydrophobicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophobicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#NeutralAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Non-EssentialAminoAcid"/>
+        <aminoacid:molarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">115 Da</aminoacid:molarMass>
+        <aminoacid:nameAbbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pro</aminoacid:nameAbbreviation>
+        <aminoacid:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P</aminoacid:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Serine -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Serine">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophilicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#NeutralAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Non-EssentialAminoAcid"/>
+        <aminoacid:molarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">105 Da</aminoacid:molarMass>
+        <aminoacid:nameAbbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ser</aminoacid:nameAbbreviation>
+        <aminoacid:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S</aminoacid:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Threonine -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Threonine">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#EssentialAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophilicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#NeutralAminoAcid"/>
+        <aminoacid:molarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">119 Da</aminoacid:molarMass>
+        <aminoacid:nameAbbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thr</aminoacid:nameAbbreviation>
+        <aminoacid:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T</aminoacid:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Tryptophan -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Tryptophan">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AromaticAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AromaticHydrophobicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#EssentialAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophobicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#NeutralAminoAcid"/>
+        <aminoacid:molarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">204 Da</aminoacid:molarMass>
+        <aminoacid:nameAbbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trp</aminoacid:nameAbbreviation>
+        <aminoacid:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">W</aminoacid:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Tyrosine -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Tyrosine">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AromaticAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophilicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#NeutralAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Non-EssentialAminoAcid"/>
+        <aminoacid:molarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">181 Da</aminoacid:molarMass>
+        <aminoacid:nameAbbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tyr</aminoacid:nameAbbreviation>
+        <aminoacid:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Y</aminoacid:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#Valine -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Valine">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AliphaticAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AlkylHydrophobicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#AminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#EssentialAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#HydrophobicAminoAcid"/>
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#NeutralAminoAcid"/>
+        <aminoacid:molarMass rdf:datatype="http://www.w3.org/2001/XMLSchema#string">117 Da</aminoacid:molarMass>
+        <aminoacid:nameAbbreviation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Val</aminoacid:nameAbbreviation>
+        <aminoacid:symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">V</aminoacid:symbol>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.aminoacidpedia.org/ontologies/aminoacid#a -->
+
+    <owl:NamedIndividual rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#a">
+        <rdf:type rdf:resource="http://www.aminoacidpedia.org/ontologies/aminoacid#Negative"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Acidity"/>
+            <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Charge"/>
+            <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Essentiality"/>
+            <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Polarity"/>
+            <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#SideChainStructure"/>
+            <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Size"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Large"/>
+            <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Small"/>
+            <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Tiny"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Negative"/>
+            <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Neutral"/>
+            <rdf:Description rdf:about="http://www.aminoacidpedia.org/ontologies/aminoacid#Positive"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
